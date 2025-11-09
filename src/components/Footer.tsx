@@ -8,7 +8,7 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-3">
             <h3 className="text-lg font-bold bg-gradient-primary bg-clip-text text-transparent">
-              DonghuaK!ta
+              DongHuaKu
             </h3>
             <p className="text-sm text-muted-foreground">
               Your premier destination for watching Chinese animation (Donghua) with subtitle Indonesia.
@@ -58,14 +58,14 @@ export const Footer = () => {
           <div className="space-y-3">
             <h4 className="text-sm font-semibold">About</h4>
             <p className="text-sm text-muted-foreground">
-              DonghuaK!ta provides free streaming of Chinese animation with Indonesian subtitles. All content belongs to their respective owners.
+              DongHuaKu provides free streaming of Chinese animation with Indonesian subtitles. All content belongs to their respective owners.
             </p>
           </div>
         </div>
 
         <div className="border-t mt-8 pt-6 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} DonghuaK!ta. All rights reserved.
+            © {new Date().getFullYear()} DongHuaKu. All rights reserved.
           </p>
         </div>
       </div>
