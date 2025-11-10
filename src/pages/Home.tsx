@@ -103,7 +103,7 @@ export default function Home() {
                           )}
                         </div>
                         <div className="flex items-center gap-4">
-                          <Link to={`/episode/${donghua.slug}-episode-1-subtitle-indonesia`}>
+                          <Link to={`/episode/${donghua.slug.replace(/\/$/, '')}-episode-1-subtitle-indonesia`}>
                             <Button size="lg" className="gap-2 text-base md:text-lg px-6 md:px-8 py-5 md:py-6 shadow-hover hover:scale-105 transition-all">
                               <Play className="h-5 w-5 md:h-6 md:w-6" fill="currentColor" />
                               Watch Now
