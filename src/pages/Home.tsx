@@ -102,12 +102,19 @@ export default function Home() {
                             </span>
                           )}
                         </div>
-                        <Link to={`/donghua/${donghua.slug}`}>
-                          <Button size="lg" className="gap-2 text-base md:text-lg px-6 md:px-8 py-5 md:py-6 shadow-hover hover:scale-105 transition-all">
-                            <Play className="h-5 w-5 md:h-6 md:w-6" fill="currentColor" />
-                            Watch Now
-                          </Button>
-                        </Link>
+                        <div className="flex items-center gap-4">
+                          <Link to={`/donghua/${donghua.slug}/episode/1`}>
+                            <Button size="lg" className="gap-2 text-base md:text-lg px-6 md:px-8 py-5 md:py-6 shadow-hover hover:scale-105 transition-all">
+                              <Play className="h-5 w-5 md:h-6 md:w-6" fill="currentColor" />
+                              Watch Now
+                            </Button>
+                          </Link>
+                          <Link to={`/donghua/${donghua.slug}`}>
+                            <Button size="lg" variant="outline" className="gap-2 text-base md:text-lg px-6 md:px-8 py-5 md:py-6 shadow-hover hover:scale-105 transition-all">
+                              More Info
+                            </Button>
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -136,7 +143,7 @@ export default function Home() {
           {loading ? (
             <LoadingGrid count={12} />
           ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+            <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
               {latestRelease.map((donghua, index) => (
                 <DonghuaCard key={index} donghua={donghua} />
               ))}
@@ -162,7 +169,7 @@ export default function Home() {
           {loading ? (
             <LoadingGrid count={8} />
           ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+            <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
               {ongoing.map((donghua, index) => (
                 <DonghuaCard key={index} donghua={donghua} />
               ))}
@@ -188,7 +195,7 @@ export default function Home() {
           {loading ? (
             <LoadingGrid count={8} />
           ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+            <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
               {completed.map((donghua, index) => (
                 <DonghuaCard key={index} donghua={donghua} />
               ))}
