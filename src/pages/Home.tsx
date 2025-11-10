@@ -103,13 +103,13 @@ export default function Home() {
                           )}
                         </div>
                         <div className="flex items-center gap-4">
-                          <Link to={`/donghua/${donghua.slug}/episode/1`}>
+                          <Link to={`/episode/${donghua.slug}-episode-1`}>
                             <Button size="lg" className="gap-2 text-base md:text-lg px-6 md:px-8 py-5 md:py-6 shadow-hover hover:scale-105 transition-all">
                               <Play className="h-5 w-5 md:h-6 md:w-6" fill="currentColor" />
                               Watch Now
                             </Button>
                           </Link>
-                          <Link to={`/donghua/${donghua.slug}`}>
+                          <Link to={`/detail/${donghua.slug}`}>
                             <Button size="lg" variant="outline" className="gap-2 text-base md:text-lg px-6 md:px-8 py-5 md:py-6 shadow-hover hover:scale-105 transition-all">
                               More Info
                             </Button>
